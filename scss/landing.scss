@@ -1,0 +1,416 @@
+@use 'partials/global.scss' as *;
+
+/* =============== GLOBAL =============== */
+html, body {
+  font-family: "Open Sans";
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 3.75rem;
+  font-weight: 300;
+  margin-top: 0;
+}
+h2 {
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+h3 {
+  font-size: 2.0625rem;
+  font-weight: 300;
+  margin-top: 1.875rem;
+  margin-bottom: 0;
+}
+.text-bold {
+  font-weight: bold;
+}
+.icon {
+  width:50px;
+}
+
+/* ================ HEADER ================ */
+
+header {
+  background-color: #FFF0ED;
+}
+
+/* ================ NAVBAR ================ */
+.nav{
+  display: flex;
+  align-items: center;
+  padding-top: 0px;
+}
+.navLogoBrandContainer{
+  display: flex;
+}
+.navLink{
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+}
+.navBrand {
+  display: flex;
+  padding: 0 0 0 0.5rem;
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 1rem 2.5rem 1rem 0;
+  text-decoration: none;
+  list-style-type: none;
+  color: #000000;
+}
+.navLinksContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+  width: 100%;
+}
+.navLinks {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 1.313rem;
+  font-weight: 400;
+  display: inline-flex;
+}
+.navMenuOne,
+.navMenuTwo {
+  color: #000000;
+  margin-right: 2.5rem;
+  text-decoration: none;
+
+}
+.navMenuThree {
+  color: #5BACC3;
+  margin-right: 2.5rem;
+  text-decoration: none;
+}
+
+/* ================ ACTIONS ================ */
+
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes flashing {
+  0% {
+    background-color: #393939;
+  }
+  50% {
+    background-color: #5BACC3;
+  }
+  100% {
+    background-color: #393939;
+  }
+}
+@keyframes flashing {
+  0% {
+    background-color: #393939;
+  }
+  50% {
+    background-color: #5BACC3;
+  }
+  100% {
+    background-color: #393939;
+  }
+}
+
+/* ================ HERO BANNER ================ */
+
+.hero {
+  background-color: #FFF0ED;
+  padding: 1.25rem 3rem;
+  display: flex;
+}
+.heroText {
+  display: inline-block;
+  vertical-align: middle;
+  width: 45%;
+  padding: 5rem;
+}
+.heroTextBlurb {
+  width: 80%;
+  vertical-align: middle;
+  padding-bottom: 2.5rem;
+}
+.heroImage {
+  text-align: center;
+}
+.heroButtonFlexContainer{
+  display: flex;
+  flex-direction: column;
+}
+.heroButton{
+  font-weight: 400;
+  background-color: #5BACC3;
+  width: 11.25rem;
+  height: 3.44rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.heroButtonText{
+  color: #fff;
+  font-size: 1.313rem;
+  text-decoration: none;
+  list-style-type: none;
+
+}
+.heroButtonBorder{
+  border: 2px solid #393939;
+  width: 11.25rem;
+  height: 3.44rem;
+  position: relative;
+  left: -0.4rem;
+  top: -3.9rem;
+}
+.heroButtonBorder:active {
+  transform: translate(0.5rem, 0.5rem);
+}
+
+/* ================ OUR PRODUCTS  ================ */
+
+.products{
+  background-color: #F7F7F7;
+}
+.ourProductsTitle{
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  padding-top: 3.125rem;
+}
+.productCardSection{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.productCard{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0px 5px 9px -1px rgba(0, 0, 0, 0.25);
+  margin: 5% 4% 5% 2%;
+  padding-top: 80px;
+  border-radius: 10px;
+  background-color: #FFF;
+  width:370px;
+  height:440px;
+  justify-content: flex-end;
+}
+.productCardImage{
+  height: 280px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.productCardBottom{
+  background-color: #FFF0ED;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.productCardQuantity{
+  color:#8b8c8f
+}
+.productCost {
+  color: #5BACC3;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-top: 5px;
+  padding-left: 20px;
+  letter-spacing: -0.5px;
+}
+.productsButtonFlexContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productsButton {
+  font-weight: 400;
+  background-color: #5BACC3;
+  width: 11.25rem;
+  height: 3.44rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productsButtonText{
+  color: white;
+  font-size: 1.313rem;
+  text-decoration: none;
+  list-style-type: none;
+}
+.productsButtonBorder{
+  border: 2px solid #393939;
+  width: 11.25rem;
+  height: 3.44rem;
+  position: relative;
+  left: -0.3rem;
+  top: -4rem;
+  width: 11.25rem;
+  height: 3.44rem;
+}
+.productsButtonBorder:active {
+  transform: translate(0.5rem, 0.5rem);
+}
+
+/* ================ DISCOUNT BANNER  ================ */
+.discountSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7rem 5rem 0rem 5rem;
+}
+.ourSource {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.ourSourceText {
+  width: 50%;
+}
+.ourSourceBlurb {
+  margin: 1rem 0 3rem 0;
+  width: 80%;
+}
+.ourSourceIcons {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.ourSourceButtonFlex{
+  display: flexbox;
+}
+.ourSourceButton {
+  font-weight: 400;
+  background-color: #5BACC3;
+  width: 11.25rem;
+  height: 3.44rem;
+  border: none;
+  justify-content: center;
+  margin: 3rem auto 1.25rem auto;
+}
+.ourSourceButtonText {
+  text-decoration: none;
+  list-style-type: none;
+}
+.ourSourceButtonText {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #FFF;
+}
+.ourSourceButtonBorder{
+  border: 2px solid #393939;
+  width: 11.25rem;
+  height: 3.44rem;
+  position: relative;
+  left: -0.4rem;
+  top: -5.1rem;
+  width: 11.25rem;
+  height: 3.44rem;
+}
+.ourSourceButtonBorder:active {
+  transform: translate(0.5rem, 0.5rem);
+}
+.ourSourceImageContainer {
+  width: 35%;
+  position: relative;
+}
+.ourSourceImage {
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  padding: 5rem 0;
+  background-image: url("../assets/coldbrewbackground.png");
+}
+.ourSource__TiltedCan:hover {
+  -webkit-animation: rotate 2s linear infinite;
+          animation: rotate 2s linear infinite;
+}
+.ourSource__TiltedCanBorder{
+  border: 5px solid #5BACC3;
+  width: 100%;
+  height: 85%;
+  position: absolute;
+  left: -1.5rem;
+  top: -1.5rem;
+}
+.discountBanner {
+  width:90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7rem auto 7rem auto;
+  padding: 3rem;
+}
+.discountText {
+  color: white;
+  font-size: 2.813rem;
+  text-align: center;
+  padding: 1.25rem;
+  margin: 1.25rem;
+  background-color: #393939;
+  width: 90%;
+  animation: flashing 2.5s linear infinite;
+          animation: flashing 2.5s linear infinite;
+}
+.discountCode {
+  font-weight: bold;
+}
+
+/* ================ FOOTER  ================ */
+
+.footer {
+  background-color: #FFF0ED;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  position: relative;
+  justify-content: space-evenly;
+}
+.footer__image {
+  position: absolute;
+  width: 6rem;
+  opacity: 0.25;
+}
+.footer__image--left {
+  top: 1rem;
+  left: -2rem;
+}
+.footer__image--right {
+  bottom: 1rem;
+  right: -2rem;
+}
+.footerHeading {
+  font-size: 2.063rem;
+  font-weight: 300;
+  margin: 1rem 2.5rem auto 2.5rem;
+}
+.footerText {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 1rem 2.5rem 0 2.5rem;
+}
+.footerIcons {
+  margin: 0.5rem 2.5rem 0 2.5rem;
+}
